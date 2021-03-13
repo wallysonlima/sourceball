@@ -5,4 +5,6 @@
     <string name="register">Register with Facebook account</string>
     <string name="login">Login</string>
     <string name="clean">Clean</string>
+    <string name="register2">Register</string>
+    <string name="errorlogin">Error ! Please insert facebook and password again !</string>
 </resources>

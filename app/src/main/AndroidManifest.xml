@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/sourceball_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sourceball">
+        <activity android:name=".ui.OptionsActivity"></activity>
         <activity android:name=".ui.Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
