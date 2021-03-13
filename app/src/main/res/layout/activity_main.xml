@@ -4,15 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alpha="0.5"
+    android:background="@mipmap/allianzp_foreground"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textView"
+        android:layout_width="287dp"
+        android:layout_height="208dp"
+        android:layout_marginBottom="70dp"
+        android:background="@mipmap/sourceballt_foreground"
+        android:shadowColor="@color/cardview_dark_background"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editTextFacebook"
+        android:layout_width="288dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="283dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="66dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFacebook" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="83dp"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="61dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonClean"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegister" />
+
+    <Button
+        android:id="@+id/buttonClean"
+        android:layout_width="145dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="@string/clean"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegister" />
 </androidx.constraintlayout.widget.ConstraintLayout>
