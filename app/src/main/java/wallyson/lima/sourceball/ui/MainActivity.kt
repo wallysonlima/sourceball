@@ -1,10 +1,11 @@
-package wallyson.lima.sourceball
+package wallyson.lima.sourceball.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import wallyson.lima.sourceball.R
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btnClean: Button
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initialize()
-        
+
         btnClean.setOnClickListener {
             editTextFacebook.setText("")
             editTextPassword.setText("")

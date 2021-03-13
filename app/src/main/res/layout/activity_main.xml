@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:alpha="0.5"
     android:background="@mipmap/allianzp_foreground"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -32,27 +32,32 @@
         android:hint="@string/name"
         android:inputType="textPersonName"
         android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="283dp"
         android:layout_height="62dp"
         android:layout_marginStart="62dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="66dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textViewRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFacebook" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFacebook"
+        app:layout_constraintVertical_bias="0.48000002" />
 
     <TextView
         android:id="@+id/textViewRegister"
@@ -72,20 +77,22 @@
 
     <Button
         android:id="@+id/buttonLogin"
-        android:layout_width="145dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="83dp"
+        android:layout_width="121dp"
+        android:layout_height="74dp"
         android:layout_marginEnd="61dp"
+        android:layout_marginBottom="49dp"
         android:backgroundTint="@color/teal_700"
         android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buttonClean"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRegister" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextFacebook"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/buttonClean"
-        android:layout_width="145dp"
-        android:layout_height="76dp"
+        android:layout_width="121dp"
+        android:layout_height="74dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="83dp"
         android:layout_marginBottom="49dp"
@@ -94,5 +101,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonLogin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRegister" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegister"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
