@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:alpha="0.5"
     android:background="@mipmap/allianzp_foreground"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.activity.MainActivity">
 
     <TextView
         android:id="@+id/textView"

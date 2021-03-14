@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "354121299752",
+    "project_id": "sourceball",
+    "storage_bucket": "sourceball.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354121299752:android:25345b0d94c44aec66421d",
+        "android_client_info": {
+          "package_name": "wallyson.lima.sourceball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354121299752-bl9rjj786hc87nd75p6tutg8kibbh2df.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wallyson.lima.sourceball",
+            "certificate_hash": "c3724b8ea8e7bf5b29b57a2c2909d7e581dcd75b"
+          }
+        },
+        {
+          "client_id": "354121299752-ndo7bo9vbf48k71j095ibdnvq7jt3ufi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ8TZwz3tg66neNN7bC4gt6crd5QS2CPc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "354121299752-ndo7bo9vbf48k71j095ibdnvq7jt3ufi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

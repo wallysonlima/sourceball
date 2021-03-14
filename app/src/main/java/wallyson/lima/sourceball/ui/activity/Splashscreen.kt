@@ -1,4 +1,4 @@
-package wallyson.lima.sourceball.ui
+package wallyson.lima.sourceball.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
